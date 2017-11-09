@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rpo-Ac-CXA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GillSans.ttc">
+            <string>GillSans-Bold</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-BoldItalic</string>
+        </array>
+        <array key="MarkerFeltThin.ttf">
+            <string>MarkerFelt-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quote_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nCM-gx-3bW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="quoteCell" rowHeight="100" id="9Bp-1D-vHz" customClass="QuoteTableViewCell" customModule="Quote_Pro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Bp-1D-vHz" id="sbJ-By-21b">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oIB-Nt-tL9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah1-Yb-hCc">
+                                                    <rect key="frame" x="8" y="8" width="49" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6g-Xl-ZbZ">
+                                                    <rect key="frame" x="8" y="70" width="52" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oIB-Nt-tL9" firstAttribute="top" secondItem="sbJ-By-21b" secondAttribute="top" id="3TK-KX-jYd"/>
+                                                <constraint firstItem="Ah1-Yb-hCc" firstAttribute="top" secondItem="sbJ-By-21b" secondAttribute="topMargin" id="JzE-Yd-ee1"/>
+                                                <constraint firstItem="oIB-Nt-tL9" firstAttribute="leading" secondItem="sbJ-By-21b" secondAttribute="leading" id="Pwg-BG-kYy"/>
+                                                <constraint firstAttribute="trailing" secondItem="oIB-Nt-tL9" secondAttribute="trailing" id="RBN-iL-W9t"/>
+                                                <constraint firstItem="V6g-Xl-ZbZ" firstAttribute="leading" secondItem="sbJ-By-21b" secondAttribute="leadingMargin" id="fnC-Vh-eSm"/>
+                                                <constraint firstAttribute="bottom" secondItem="oIB-Nt-tL9" secondAttribute="bottom" id="hQE-FG-2Gh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="V6g-Xl-ZbZ" secondAttribute="bottom" id="hz7-Uy-clO"/>
+                                                <constraint firstItem="Ah1-Yb-hCc" firstAttribute="leading" secondItem="sbJ-By-21b" secondAttribute="leadingMargin" id="ieN-f3-9bv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="V6g-Xl-ZbZ" id="AuP-wj-WER"/>
+                                            <outlet property="imageView" destination="oIB-Nt-tL9" id="lop-qJ-m37"/>
+                                            <outlet property="quoteImageView" destination="oIB-Nt-tL9" id="BS6-xX-hCE"/>
+                                            <outlet property="quoteLabel" destination="Ah1-Yb-hCc" id="Liy-3a-TOp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="keb-KE-a4o"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="kXe-de-ruV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nCM-gx-3bW" secondAttribute="trailing" id="GIy-Ax-i1i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nCM-gx-3bW" secondAttribute="bottom" id="HkS-FJ-3QS"/>
+                            <constraint firstItem="nCM-gx-3bW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ccA-ow-JGK"/>
+                            <constraint firstItem="nCM-gx-3bW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ygS-uN-bhZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qM9-dE-fLS">
+                        <barButtonItem key="rightBarButtonItem" title="ADD" systemItem="add" id="wkR-5o-9P1">
+                            <connections>
+                                <segue destination="Zd3-eX-gZX" kind="show" identifier="newQuoteSegue" id="tmw-yN-tID"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="nCM-gx-3bW" id="qoz-bR-oh1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376.80000000000001" y="128.18590704647679"/>
+        </scene>
+        <!--Quote Generator View Controller-->
+        <scene sceneID="dgF-c2-UND">
+            <objects>
+                <viewController id="Zd3-eX-gZX" customClass="QuoteGeneratorViewController" customModule="Quote_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PkP-dW-jTf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShP-qx-49Y">
+                                <rect key="frame" x="0.0" y="64" width="375" height="70"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEu-MI-IRX">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXX-A8-08W">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="70"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                        <state key="normal" title="NEW PHOTO!"/>
+                                        <connections>
+                                            <action selector="generatePhoto:" destination="Zd3-eX-gZX" eventType="touchUpInside" id="KYP-In-qco"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxu-my-gcr">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="70"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
+                                        <state key="normal" title="NEW QUOTE!"/>
+                                        <connections>
+                                            <action selector="generateQuote:" destination="Zd3-eX-gZX" eventType="touchUpInside" id="b8k-Ym-xnd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNe-9G-rJy">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="70"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="SAVE!"/>
+                                        <connections>
+                                            <action selector="saveQuoteImage:" destination="Zd3-eX-gZX" eventType="touchUpInside" id="aMq-1e-apD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="8EQ-hn-Naj"/>
+                                    <constraint firstAttribute="trailing" secondItem="RNe-9G-rJy" secondAttribute="trailing" id="FEi-mH-2Rs"/>
+                                    <constraint firstItem="cXX-A8-08W" firstAttribute="leading" secondItem="ShP-qx-49Y" secondAttribute="leading" id="p6P-yz-NzP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ShP-qx-49Y" firstAttribute="leading" secondItem="5lc-RM-W1p" secondAttribute="leading" id="4HD-v2-Rx6"/>
+                            <constraint firstItem="5lc-RM-W1p" firstAttribute="trailing" secondItem="ShP-qx-49Y" secondAttribute="trailing" id="EPh-le-p0p"/>
+                            <constraint firstItem="cXX-A8-08W" firstAttribute="width" secondItem="PkP-dW-jTf" secondAttribute="width" multiplier="1:3" id="Pc0-E2-tOP"/>
+                            <constraint firstItem="RNe-9G-rJy" firstAttribute="width" secondItem="PkP-dW-jTf" secondAttribute="width" multiplier="1:3" id="Wjo-pQ-eA0"/>
+                            <constraint firstItem="ShP-qx-49Y" firstAttribute="top" secondItem="5lc-RM-W1p" secondAttribute="top" id="yec-fi-ISr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5lc-RM-W1p"/>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="ShP-qx-49Y" id="K8D-GF-POG"/>
+                        <segue destination="Cu2-Gs-4Xp" kind="unwind" identifier="unwindToMenu" unwindAction="unwindToMenuWithSegue:" id="aNf-Of-2V0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5w-6t-Bsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Cu2-Gs-4Xp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="72A-O6-xFh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rpo-Ac-CXA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S6Q-M7-fOB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yU9-4h-1e4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXj-uu-RFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="-41"/>
+        </scene>
+    </scenes>
+</document>
